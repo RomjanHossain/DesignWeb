@@ -1,0 +1,22 @@
+{
+  "name": "designweb",
+  "version": "1.0.0",
+  "description": "practicing some webdesign",
+  "main": "index.js",
+  "scripts": {
+    "Cscss": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomjanHossain/DesignWeb.git"
+  },
+  "author": "RomjanHossain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomjanHossain/DesignWeb/issues"
+  },
+  "homepage": "https://github.com/RomjanHossain/DesignWeb#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

@@ -15,8 +15,9 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   color: $color-gray;
   line-height: 1.7;
   padding: 3rem;
+  // box-sizing: border-box;
 }

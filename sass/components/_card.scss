@@ -1,0 +1,147 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &__side {
+    font-size: 2rem;
+    background-color: orangered;
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+    &--back {
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(#e45485, 0.8),
+          rgba(#c7085e, 0.8)
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(#34d1e3, 0.8),
+          rgba(#09a0ba, 0.8)
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.8),
+          rgba($color-secondary-dark, 0.8)
+        );
+      }
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+
+    &-1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(#e45485, 0.8),
+          rgba(#c7085e, 0.8)
+        ),
+        url(../img/yourname3.jpg);
+    }
+    &-2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(#34d1e3, 0.8),
+          rgba(#09a0ba, 0.8)
+        ),
+        url(../img/onepiece.jpg);
+    }
+    &-3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.8),
+          rgba($color-secondary-dark, 0.8)
+        ),
+        url(../img/naruto.jpg);
+    }
+  }
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    text-align: right;
+    right: 2rem;
+    width: 75%;
+  }
+  &__heading_span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    &-1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#e45485, 0.85),
+        rgba(#c7085e, 0.85)
+      );
+    }
+    &-2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(#34d1e3, 0.85),
+        rgba(#09a0ba, 0.85)
+      );
+    }
+    &-3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+  }
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: $default-font-size;
+        padding: 1.5rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-gray-light-2;
+        }
+      }
+    }
+  }
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

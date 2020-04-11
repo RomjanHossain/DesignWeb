@@ -111,6 +111,9 @@ body {
 .u-margin-top-medium {
   margin-top: 10rem !important; }
 
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
 .u-margin-left-medium {
   margin-left: 20rem !important; }
 
@@ -130,7 +133,7 @@ body {
 
 .section-anime {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 10rem; }
+  padding: 25rem 0 15rem 10rem; }
 
 .header {
   height: 95vh;
@@ -204,6 +207,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
 
 .btn::after {
   content: "";
@@ -322,7 +331,9 @@ body {
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .card__picture-1 {
       background-image: linear-gradient(to right bottom, rgba(228, 84, 133, 0.8), rgba(199, 8, 94, 0.8)), url(../img/yourname3.jpg); }
     .card__picture-2 {
@@ -365,4 +376,16 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center; }
+  .card__rating-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card__rating-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__rating-value {
+    font-size: 6rem;
+    font-weight: 100; }

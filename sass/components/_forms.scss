@@ -48,7 +48,7 @@
     display: inline-block;
   }
   &__radio-input {
-    // display: none;
+    display: none;
   }
   &__radio-label {
     font-size: $default-font-size;
@@ -60,14 +60,14 @@
     }
   }
   &__radio-button {
-    height: 1rem;
-    width: 1rem;
+    height: 1.8rem;
+    width: 1.8rem;
     border: 5px solid $color-primary;
     border-radius: 50%;
     display: block;
     position: absolute;
-    top: 4rem;
-    left: -3rem;
+    top: 0rem;
+    left: 0rem;
     &::after {
       content: "";
       display: block;

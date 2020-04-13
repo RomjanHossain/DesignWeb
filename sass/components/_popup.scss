@@ -10,6 +10,14 @@
   background-color: rgba($color-dark, 0.8);
   z-index: 300;
   transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px);
+  orbackdrop-filter: blur(10px);
+  ) {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(90px) brightness(5000%);
+    background-color: rgba($color-dark, 0.3);
+  }
   &:target {
     opacity: 1;
     visibility: visible;

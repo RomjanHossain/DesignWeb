@@ -10,6 +10,15 @@
     z-index: 100;
     // transform: scale(80);
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(tab-port) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
   &__item {
     margin: 1rem;
@@ -76,6 +85,15 @@
     z-index: 200;
     cursor: pointer;
     box-shadow: 0 1rem 3rem rgba($color-dark, 0.1);
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
   &__checkbox:checked ~ &__background {
     transform: scale(80);
